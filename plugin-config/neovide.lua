@@ -15,9 +15,7 @@ function M.config()
         ['guifont'] = 'JetBrainsMono_Nerd_Font:h14',
         ['neovide_cursor_animation_length'] = 0.03,
         ['neovide_cursor_trail_size'] = 0.8,
-        -- ['neovide_cursor_trail_length']     = 0.9,
         ['neovide_cursor_vfx_mode'] = "pixiedust",
-        -- ['neovide_cursor_vfx_mode']         = "torpedo",
         ['neovide_profiler'] = false,
         ['neovide_remember_window_size'] = true,
         ['neovide_transparency'] = 0.97,
@@ -42,6 +40,7 @@ end
 
 function M.background()
     -- Helper function for transparency formatting
+    -- only macOS
     local alpha = function()
         return string.format("%x", math.floor(255 * vim.g.transparency or 0.8))
     end
@@ -49,7 +48,6 @@ function M.background()
     vim.g.neovide_transparency = 0.0
     vim.g.transparency = 0.8
     vim.g.neovide_background_color = "#0f1117" .. alpha()
-
 end
 
 -- 设置fps

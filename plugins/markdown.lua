@@ -4,23 +4,6 @@
 --=================================================================================
 --]]
 return {
-    --[[
-        {
-            "iamcco/markdown-preview.nvim",
-            cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-            build = function()
-                vim.fn["mkdp#util#install"]()
-            end,
-            init = function()
-                vim.g.mkdp_filetypes = { "markdown", "md" }
-            end,
-            ft = { "markdown", "md" },
-            config = function()
-                require("user/plugin-config/markdown")
-            end,
-        },
-    ]]
-
     { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim", enable=true },
     { 'preservim/vim-markdown',
       init = function()
