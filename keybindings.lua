@@ -39,7 +39,7 @@ maps.n['K'] = { '5k', desc = "move quick" }
 maps.n['W'] = { '5w', desc = "move quick" }
 maps.n['B'] = { '5b', desc = "move quick" }
 maps.n['gh'] = { '^', desc = "go to line start" }
-maps.n['g;'] = { '$', desc = "go to line end" }
+maps.n['gl'] = { '$', desc = "go to line end" }
 maps.v['gh'] = { '^', desc = "go to line start" }
 maps.v['gl'] = { '$', desc = "go to line end" }
 maps.n['<Esc>'] = { '<Cmd>noh<CR><Esc>', desc = "no highlight" }
@@ -174,7 +174,44 @@ else
     maps.n["<Left>"] = { "<cmd>vertical resize -2<CR>", desc = "Resize split left" }
     maps.n["<Right>"] = { "<cmd>vertical resize +2<CR>", desc = "Resize split right" }
 end
-
+if is_available "flash.nvim" then
+    maps.n["<leader>s"] = {
+        function()
+            require("flash").jump()
+        end,
+        desc = "Flash",
+    }
+    maps.x["<leader>s"] = {
+        function()
+            require("flash").jump()
+        end,
+        desc = "Flash",
+    }
+    maps.o["<leader>s"] = {
+        function()
+            require("flash").jump()
+        end,
+        desc = "Flash",
+    }
+    maps.n["<leader><leader>s"] = {
+        function()
+            require("flash").treesitter()
+        end,
+        desc = "Flash Treesitter",
+    }
+    maps.x["<leader><leader>s"] = {
+        function()
+            require("flash").treesitter()
+        end,
+        desc = "Flash Treesitter",
+    }
+    maps.o["<leader><leader>s"] = {
+        function()
+            require("flash").treesitter()
+        end,
+        desc = "Flash Treesitter",
+    }
+end
 -- Telescope
 if is_available "telescope.nvim" then
     maps.n["<leader>f"] = sections.f
