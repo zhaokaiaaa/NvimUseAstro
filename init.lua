@@ -1,5 +1,5 @@
 return {
-    --mappings = function(maps) return require("user.keymaps").mappings(maps) end,
+    mappings = function(maps) return require("user.keybindings").mappings(maps) end,
     diagnostics = {
         update_in_insert = false,
         virtual_text = { severity = { min = vim.diagnostic.severity.WARN } },
