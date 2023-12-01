@@ -25,6 +25,10 @@ function M.mappings(maps)
     maps.n['B'] = { '5b', desc = "move quick" }
     maps.n['gh'] = { '^', desc = "go to line start" }
     maps.n['gl'] = { '$', desc = "go to line end" }
+    maps.v['J'] = { '5j', desc = "move quick" }
+    maps.v['K'] = { '5k', desc = "move quick" }
+    maps.v['W'] = { '5w', desc = "move quick" }
+    maps.v['B'] = { '5b', desc = "move quick" }
     maps.v['gh'] = { '^', desc = "go to line start" }
     maps.v['gl'] = { '$', desc = "go to line end" }
     maps.n['<Esc>'] = { '<Cmd>noh<CR><Esc>', desc = "no highlight" }
