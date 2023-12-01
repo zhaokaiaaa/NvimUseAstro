@@ -6,52 +6,50 @@
 
 ### 基础快捷键
 
-|      快捷键      |                 行为                 |
-| :--------------: | :----------------------------------: |
-|        J         |                  5j                  |
-|        K         |                  5k                  |
-|        W         |                  5w                  |
-|        B         |                  5b                  |
-|        gh        |                到行首                |
-|        g;        |                到行尾                |
-|        ,;        |         插入模式下行尾增加;          |
-|        ga        | last changed in current buffer(file) |
-|      `C-h`       |            插入模式下左移            |
-|      `C-l`       |            插入模式下右移            |
-|      `C-j`       |            插入模式下下移            |
-|      `C-k`       |            插入模式下上移            |
-|       `Up`       |            命令栏靠近底部            |
-|      `Down`      |            命令栏远离底部            |
-|      `Left`      |              左侧栏变窄              |
-|     `Right`      |              左侧栏变宽              |
-| `leader` `space` | Jump to the next '<++>' and Edit it  |
-|    `leader`A     |              Select All              |
-|    `leader`Y     |               Copy All               |
-|    `leader`P     |          Paste From CopyAll          |
-|    `leader`i     |            Insert after (            |
-|    `leader`q     |          Quit and Not save           |
-|    `leader`cu    |               转为大写               |
-|    `leader`cl    |               转为小写               |
-|    `leader`vi    |          快速打开vimrc文件           |
-|    `leader`vs    |          重新加载vimrc文件           |
-|    `leader`tu    |               New tab                |
-|    `leader`s     |                 save                 |
-|    `leader`wj    |        Cursor to below window        |
-|    `leader`wk    |         Cursor to up window          |
-|    `leader`wh    |        Cursor to left window         |
-|    `leader`wl    |        Cursor to right window        |
-|    `leader`wq    |            Quit and Save             |
-|    `leader`sj    |   split below and go to this split   |
-|    `leader`sk    |    split up and go to this split     |
-|    `leader`sh    |   split left and go to this split    |
-|    `leader`sl    |   split right and go to this split   |
+|     快捷键      |                  行为                  |
+|:------------:|:------------------------------------:|
+|      J       |                  5j                  |
+|      K       |                  5k                  |
+|      W       |                  5w                  |
+|      B       |                  5b                  |
+|      gh      |                 到行首                  |
+|      g;      |                 到行尾                  |
+|      ,;      |              插入模式下行尾增加;              |
+|      ga      | last changed in current buffer(file) |
+|    `C-h`     |               插入模式下左移                |
+|    `C-l`     |               插入模式下右移                |
+|    `C-j`     |               插入模式下下移                |
+|    `C-k`     |               插入模式下上移                |
+|     `Up`     |               命令栏靠近底部                |
+|    `Down`    |               命令栏远离底部                |
+|    `Left`    |                左侧栏变窄                 |
+|   `Right`    |                左侧栏变宽                 |
+|  `leader`A   |              Select All              |
+|  `leader`Y   |               Copy All               |
+|  `leader`P   |          Paste From CopyAll          |
+|  `leader`i   |            Insert after (            |
+|  `leader`q   |             close buffer             |
+| ctrl+shift+u |                转为大小写                 |
+|  `leader`vi  |             快速打开vimrc文件              |
+|  `leader`vs  |             重新加载vimrc文件              |
+|  `leader`tu  |               New tab                |
+|    ctrl+s    |                 save                 |
+|  `leader`wj  |        Cursor to below window        |
+|  `leader`wk  |         Cursor to up window          |
+|  `leader`wh  |        Cursor to left window         |
+|  `leader`wl  |        Cursor to right window        |
+|  `leader`wq  |            Quit and Save             |
+|      sj      |   split below and go to this split   |
+|      sk      |    split up and go to this split     |
+|      sh      |   split left and go to this split    |
+|      sl      |   split right and go to this split   |
 
 ### 插件
 
 - telescope/telescope-file-browser
 
   |          命令          |   快捷键   |         行为          |
-  | :--------------------: | :--------: | :-------------------: |
+    | :--------------------: | :--------: | :-------------------: |
   |  Telescope find_files  | `leader`ff |       Find File       |
   |  Telescope live_grep   | `leader`fw |       Find Word       |
   |   Telescope oldfiles   | `leader`fr | Recently opened files |
@@ -62,13 +60,13 @@
 - nvim-tree
 
   |      命令      |  快捷键   |        行为        |
-  | :------------: | :-------: | :----------------: |
+    | :------------: | :-------: | :----------------: |
   | NvimTreeToggle | `leader`e | open/close browser |
 
 - markdown相关
 
   |             命令              |  快捷键   |             行为             |
-  | :---------------------------: | :-------: | :--------------------------: |
+    | :---------------------------: | :-------: | :--------------------------: |
   | mdip#MarkdownClipboardImage() |  Ctrl-p   |      粘贴剪切板中的图片      |
   |        MarkdownPreview        |    ,r     |           开启预览           |
   |      MarkdownPreviewStop      |    ,rs    |           关闭预览           |
@@ -84,9 +82,3 @@
   |                               |    zc     |      关闭光标所在的折叠      |
   |                               |    zC     |    递归关闭光标所在的折叠    |
   |             Vista             | Ctrl-Al-l |           开启目录           |
-
-- undotree
-
-  |      命令      | 快捷键 |     行为     |
-  | :------------: | :----: | :----------: |
-  | UndotreeToggle |  `F5`  | 打开修改历史 |

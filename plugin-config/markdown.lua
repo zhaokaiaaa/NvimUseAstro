@@ -49,22 +49,6 @@ local function set_markdown_keymaps()
         ['i'] = {
             [',r'] = '<Cmd>MarkdownPreview<CR>',
             [',rs'] = '<Cmd>MarkdownPreviewStop<CR>',
-            [',f'] = '<Esc>/<++><CR>:nohlsearch<CR>\"_c4l',
-            [',w'] = '<Esc>/ <++><CR>:nohlsearch<CR>\"_c5l<CR>',
-            [',n'] = "---<Enter><Enter>",
-            [',b'] = "**** <++><Esc>F*hi",
-            [',s'] = "~~~~ <++><Esc>F~hi",
-            [',i'] = "** <++><Esc>F*i",
-            [',d'] = '`` <++><Esc>F`i',
-            [',c'] = '```<Enter><++><Enter>```<Enter><Enter><++><Esc>4kA',
-            [',m'] = '- [ ]',
-            [',p'] = '![](<++>) <++><Esc>F[a',
-            [',a'] = '[](<++>) <++><Esc>F[a',
-            [',1'] = '#<Space><Enter><++><Esc>kA',
-            [',2'] = '##<Space><Enter><++><Esc>kA',
-            [',3'] = '###<Space><Enter><++><Esc>kA',
-            [',4'] = '####<Space><Enter><++><Esc>kA',
-            [',l'] = '--------<Enter>',
         }
 
     }
