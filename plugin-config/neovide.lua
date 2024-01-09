@@ -7,12 +7,12 @@ local M = {}
 
 function M.init()
     M.config()
-    M.refresh(60, 5)
+    M.refresh(75, 5)
 end
 
 function M.config()
     local g_neovide = {
-        ['guifont'] = 'JetBrainsMono_Nerd_Font:h14',
+        ['guifont'] = 'JetBrains Mono:h14',
         ['neovide_cursor_animation_length'] = 0.03,
         ['neovide_cursor_trail_size'] = 0.8,
         ['neovide_cursor_vfx_mode'] = "pixiedust",
