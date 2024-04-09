@@ -65,7 +65,7 @@ local opt = {
     list = true,
     listchars = 'tab:| ,trail:▫',
     --guifont        = 'RobotoMono_Nerd_Font:h12',
-    guifont = 'JetBrains Mono:h14',
+    guifont = 'JetBrainsMonoNL Nerd Font Mono:h13',
     timeoutlen = 500,
     -- 设置 termguicolors 以启用高亮组
     termguicolors = true,
